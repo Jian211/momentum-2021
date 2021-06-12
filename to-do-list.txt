@@ -1,0 +1,19 @@
+6/12일
+- const > 한번 선언하면 수정 불가능
+- let   > 변할 수 있는 값을 담는 곳
+- var   > 오래된 것 어떠한 규약도 없음
+
+- true / false / null / undefined
+- array 
+    ex)
+        const dayOfWeek = [1,2,"gelefa"];
+
+- function add(a, b){
+    console.log(a+b);
+}
+const name = function(userName){
+    console.log(userName);
+}
+
+
+# 2.9 Recap할 차례
