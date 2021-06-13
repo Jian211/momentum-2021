@@ -28,3 +28,23 @@ function sayHello(){
 }
 
 sayHello();
+
+const coculator = {
+    add : function(a , b){
+        console.log(a+b);
+    },
+    minus : function(a , b){
+        console.log(a-b);
+    },
+    division : function(a , b){
+        console.log(a/b);
+    },
+    fowerOf : function(a,b){
+        console.log(a**b);
+    }
+}
+
+coculator.add(1,5);
+coculator.minus(5,12);
+coculator.division(5,2);
+coculator.fowerOf(5,2);
