@@ -29,3 +29,19 @@ const name = function(userName){
 - typeOf(인자)는 인자의 타입을 알려주는 것.
 - prompt( a, b)는 브라우저 창에서 사용자에게 질문하고 답을 받을 수 있는 것
 - isNan은 true or false값을 전달하는 것
+
+6/14
+
+- 자주사용하는 값은 변수를 활용하여 실수를 줄이며,
+  코드를 깔끔하게 만든다.
+- css는 디자인을 담당하며, JS로는html을 컨트롤 하는것이
+  베스트이다.
+- const getEm = document.querySelecter는
+  css언어로 검색이 가능하도록하는 것이다.
+- className은 클래스 이름을 검색하는 것이며
+  classList는 리스트에 클래스 이름을 담는다.
+- classList.contains("?")는 리스트에 ? 값이 있는지 찾는 것이다.
+  classList.remove("?")는 리스트에 ?를 삭제
+  classList.add("?")는 리스트에 ?를 추가하는 것이다.
+- classList.toggle("?")는 ?의 클래스 이름을 리스트에서 검색하여,
+  같은것이 있다면 삭제 없으면 추가 해주는 함수이다. 
