@@ -1,80 +1,27 @@
-// const a = 5;
-// let b= 5;
-// console.log(5+5);
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
 
-// const dayOfWeek = ["mon","tue","wed","thu","fri"];
-// console.log(dayOfWeek);
+// 1. 페이지 뜨면 localStorage에 저장되어있는지
+const savedUserId = localStorage.getItem("userId");
+const greetings = document.querySelector("#greeting");
 
-// //Get Item from Array
-// console.log(dayOfWeek[3]);
-
-// //Add one more day to the array
-// dayOfWeek.push("sat");
-// console.log(dayOfWeek);
-
-// const player ={
-//     name: "sae",
-//     points : 10,
-//     fat : false
-// };
-
-// console.log(player);
-// console.log(player.fat);
-// console.log(player["name"]);
-// console.log(player.name);
-
-// function sayHello(){
-//     console.log("hello!");
-// }
-
-// sayHello();
-
-// const coculator = {
-//     add : function(a , b){
-//         console.log(a+b);
-//     },
-//     minus : function(a , b){
-//         console.log(a-b);
-//     },
-//     division : function(a , b){
-//         console.log(a/b);
-//     },
-//     fowerOf : function(a,b){
-//         console.log(a**b);
-//     }
-// }
-
-// coculator.add(1,5);
-// coculator.minus(5,12);
-// coculator.division(5,2);
-// coculator.fowerOf(5,2);
-
-const title = document.querySelector("div h1");
-//1 way
-function titleClick1(){
-    let newColor;
-    if(title.style.color === "blue"){
-        newColor = "orange";
-    }else{
-        newColor = "blue";
-    }
-    title.style.color = newColor;
+function onLoinSubmit(event){
+    event.preventDefault();
+    const userName = loginInput.value;
+    
+    localStorage.setItem("userId", userName);
+    loginForm.classList.add("hidden");    
 }
 
-//2wqy 
-function titleClick2(){
-    const clickedClass = "clicked";
-    if(title.classList.contains(clickedClass)){
-        title.classList.remove(clickedClass);
-    }else{
-        title.classList.add(clickedClass);
-    }
+function savedUser(savedUserId){
+    loginForm.classList.add("hidden"); 
+    greetings.innerText = `welcome! ${savedUserId}, to my home~!`;
+    greetings.classList.remove("hidden");
 }
 
-//best way 3
-function titleClick3(){
-    title.classList.toggle("clicked");
+if(savedUserId === null){
+    loginForm.classList.remove("hidden");
+    loginForm.addEventListener("submit",onLoinSubmit);
+}else{
+    savedUser(savedUserId);
 }
-
-
-title.addEventListener("click", titleClick);
