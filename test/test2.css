@@ -1,0 +1,152 @@
+body {
+    width: 400px;
+    height: 880px;
+    border: 1px solid red;
+    padding-left: 20px;
+}
+header {
+    background-color: rgb(236, 218, 51) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -20px;
+    padding: 20px 12px 46px 12px; 
+    
+}
+
+header span{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.search-bar{
+    margin: 0 20px 0  0px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 24px;
+    position: relative;
+    z-index: 1;
+    top: -25px;
+    border-width: 2px;
+    box-shadow: 0 1px 8px rgb(196, 196, 196);
+}
+.search-bar span,
+.search-bar i{
+    color: gray;
+}
+.titleDesign{
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 10px 0;
+    margin-top: -8px;
+}
+
+.bookInfo{
+    display: flex;
+    margin-bottom: 20px;
+}
+.bookInfo__bookImage{
+    width: 120px;
+    height: 194px;
+    background-color: tomato;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.bookInfo__content{
+    display: flex;
+    flex-direction: column;
+}
+.bookInfo__title,
+.bookInfo__subTitle{
+    margin: 0;
+}
+.bookInfo__subTitle{
+    color :rgb(201, 201, 201);
+}
+.bookInfo__stars{
+    padding: 5px 0;
+    color: orange;
+}
+.bookInfo__twoType{
+    display: flex;
+}
+.bookInfo__twoType span{
+    display: block;
+    width: 100px;
+    background-color: rgb(235, 234, 235);
+    border-radius: 10px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px 0;
+    margin: 15px 10px 15px 0;
+}
+.bookInfo__saveAndBuy{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+.bookInfo__save{
+    width: 45px;
+    background-color: rgb(236, 218, 51) ;
+    border-radius: 50%;
+    text-align: center;
+    padding: 11px 0;
+}
+.bookInfo__bookBuy{
+    width: 150px;
+    background-color:black;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.booksInfo{
+    display: flex;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+}
+.booksInfo__book{
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.booksInfo__book:first-child{
+    margin-left: 0px;
+}
+.booksInfo__bookImg{
+    width: 80px;
+    height: 120px;
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+.size{
+    font-size: 10px;
+}
+
+.popular-authors{
+    display: flex;
+}
+.popular-authors__author{
+    width: 300px;
+    height: 160px;
+    background-color: tomato;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.popular-authors__name{
+    margin: 0;
+    line-height: 1.2;
+}
+
+.popular-authors__text{
+    color: rgb(175, 175, 175);
+    line-height: 20px;
+    font-weight: 500;
+    column-count: 1;
+    line-height: 1.3;
+}
