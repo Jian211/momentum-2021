@@ -60,16 +60,12 @@ const name = function(userName){
 - 일단 진도 계속 나가보고 혼자 만들어보는 과정이 있어야겠다. 내일복습할 것
 
 - 엘리먼트 생성하기
-  document.createElement("li");
+  const createLi document.createElement("li");
 - 엘리먼트 속에 값 넣기
-  const wValue = document.querySelector("클래스 or id")
-  wValue.innerText = 여기다 값넣기.
-  wValue.value 는 값을 가져오기 
+  createLi.value = "값은 이거에요"
 - 생성한 엘리먼트 원하는 곳에 넣기
-  li.appendChild(wValue)
+  ul.appendChild(createLi)
 - 이벤트 일어난 곳 찾기.
-  event.target.parentElement;
+  createLi.target.parentElement
 - 배열을 스트링으로 받아서 브라우저 저장소에 저장하기.
-  JSON.stringify([])
 - 스트링을 배열로 
-  JSON.parse(브라우저 스토리지에 있는 배열)
