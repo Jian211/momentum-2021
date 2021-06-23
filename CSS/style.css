@@ -4,4 +4,34 @@
 
 #quote span {
     display: block;
-} 
+}
+
+
+*{
+    box-sizing: border-box;   
+}
+html{
+    width: 100%;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+
+    position: relative;
+}
+body div{
+    position: absolute;
+}
+body img{
+    width: 100%;
+    height: 100%;
+}
+
+#clock{
+    font-size: 60px;
+}
