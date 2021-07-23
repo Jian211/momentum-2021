@@ -1,0 +1,11 @@
+.contents {
+    display: flex;
+    border : 1px solid red;
+}
+.part1 {
+    display: flex;
+    flex-direction: column;
+}
+.hidden {
+    display: none;
+}
