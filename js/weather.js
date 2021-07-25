@@ -1,4 +1,3 @@
-
 const API_KEY="5a5e5dc879b0fbacdaf831fae3d75afa";
 
 function onGeoOk(position){
@@ -13,12 +12,9 @@ function onGeoOk(position){
             const weather = document.querySelector("#weather span:first-child"); 
             const city = document.querySelector("#weather span:last-child");   
             weather.innerText = data.name;  
-            city.innerText = `${data.weather[0].main} / ${data.main.temp}` ;
+            const temp = Math.round(data.main.temp-273.15);
+            city.innerText = `${data.weather[0].main} / ${temp}'C` ;
     });
 }
 
-function onGeoErr(){
-    alert("can't find you");
-}
-
-navigator.geolocation.getCurrentPosition(onGeoOk , onGeoErr);
+navigator.geolocation.getCurrentPosition(onGeoOk , () => alert("can't find you"));
