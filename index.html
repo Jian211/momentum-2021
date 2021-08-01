@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Momentum</title>
 </head>
@@ -12,14 +13,33 @@
         <span></span>
         <span></span>
     </div> -->
+    <span>
+        <a href="https://www.youtube.com/watch?v=w023dXv03nk&list=PLVoihNyHW4xkm_KJ8_N8X7F6EQP4uSRyR&index=3">알고리즘</a>
+    </span>
     <div clsss="contents">
-        <div class="part1">
-            <h2 id="clock">00:00</h2>
-            <form class="" id="login-form">
-                <input required maxlength="10" type="text" placeholder="What is your name?"/>
-                <button>Log In</button>
-            </form>
-            <h1 class="hidden" id="greeting"></h1>
+        <div>
+            <div class="part1">
+                <h2 id="clock">00:00</h2>
+                <form class="" id="login-form">
+                    <input required maxlength="10" type="text" placeholder="What is your name?"/>
+                    <button>Log In</button>
+                </form>
+                <h1 class="hidden" id="greeting"></h1>
+            </div>
+            <div id="weather" class="part3">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="linksBox">
+                <h2 class="linksBox__title">お気に入り</h2>
+                <form action="#" class="linksBox__form">
+                    <input required type="text" class="linksBox__url-title" placeholder="タイトル" />
+                <input required type="text" class="linksBox__put-link-url" placeholder="URLを入力してください。"/>
+                <input type="submit" value="確認">
+                </form>
+                <div class="linksBox__links">
+                </div>
+            </div>
         </div>
         <div class="part2">
             <form id="todo-form">
@@ -29,29 +49,15 @@
                 
             </ul>
         </div>
-        <div id="weather" class="part3">
-            <span></span>
-            <span></span>
-        </div>
     </div>
-    <div class="linksBox">
-        <h2 class="linksBox__title">お気に入り</h2>
-        <form action="#" class="linksBox__form">
-            <input required type="text" class="linksBox__url-title" placeholder="タイトル" />
-            <input required type="text" class="linksBox__put-link-url" placeholder="URLを入力してください。"/>
-            <input type="submit" value="確認">
-        </form>
-        <div class="linksBox__links">
-        </div>
-    </div>
-    <div class="img">
+    <!-- <div class="img">
         
-    </div>
+    </div> -->
     
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
+    <!-- <script src="js/background.js"></script> -->
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/links.js"></script>

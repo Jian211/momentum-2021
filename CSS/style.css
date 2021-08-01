@@ -1,45 +1,22 @@
-@import "/css/clock.css";
-@import "/css/contents.css";
+/* @import "/css/clock.css";
+@import "/css/contents.css"; */
 
 *{
     box-sizing: border-box;   
 }
 
 body{
-    margin: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
-
-.img{
-    position: absolute;
-    top: 0;
-    z-index: -1;
+.contents div{
+    border : 1px solid red;
+    display: flex;
+    justify-content: space-between;
 }
-
-img{
-    width: 100vw;
-    height: 100vh;
+a {
+    padding: 10px;
+    border : 3px solid rgb(252, 216, 126);
+    border-radius : 5px;
 }
-
-#quote span {
-    display: block;
-}
-
-.part2 form input {
-    width: 300px;
-    height: 50px;
-    text-align: center;
-    color : rgb(2, 65, 51);
-    font-weight: 800;
-    font-size: 15px;
-    border: 5px solid rgb(0, 255, 200);
-    border-radius: 20px;
-    box-shadow: 1px 2px 3px rgb(5, 168, 106);
-    outline: none;
-}
-#greeting {
-    color: rgb(0, 255, 200);
-    font-style: italic;
-    font-size: 50px;
-    text-shadow: 2px 2px 2px rgb(5, 168, 106);
-}
-
